@@ -1,0 +1,91 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.subscribe-main-container {
+  display: grid;
+  grid-template-areas:
+    "subscribe-logo  subscribe-nav"
+    "subscribe-form subscribe-form";
+  grid-template-rows: 100px 0.7fr;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(75, 144, 178);
+  background-image: linear-gradient(
+    to left,
+    rgba(75, 144, 178, 1),
+    rgba(255, 255, 255, 0.862)
+  );
+}
+
+.subscribe-navbar {
+  grid-area: subscribe-nav;
+}
+
+.subscribe-back-home {
+  font-size: 1.2em;
+  position: fixed;
+  right: 5px;
+  top: 20px;
+}
+
+.subscribe-logo {
+  grid-area: subscribe-logo;
+  margin: 5% 0 0 20%;
+}
+
+.subscribe-shadow-box {
+  grid-area: subscribe-form;
+  margin: 1px auto;
+  padding: 5% 2%;
+  border: white solid 4px;
+  border-radius: 30px;
+  background-color: white;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+}
+
+@keyframes subscribe-glow {
+  0% {
+    box-shadow: 0 0 5px white;
+  }
+
+  50% {
+    box-shadow: 0 0 20px white;
+  }
+
+  100% {
+    box-shadow: 0 0 5px white;
+  }
+}
+
+.subscribe-logo-img {
+  animation: subscribe-glow 2s infinite;
+  height: 50%;
+  width: auto;
+  border-radius: 10px;
+}
+
+a,
+h1,
+h2,
+input {
+  transition: text-shadow 0.2s ease;
+}
+
+a:hover,
+h1:hover,
+h2:hover,
+input:hover {
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+@media (max-width: 520px) {
+}
+
+@media (min-width: 901px) {
+  .subscribe-logo-img {
+    height: 60%;
+  }
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="../css/main.css" /> -->
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/all.min.css" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+  </head>
+  <body>
+    <main class="subscribe-main-container">
+      <div class="subscribe-navbar">
+        <a href="../../index.html" class="subscribe-back-home"
+          ><h1>Home</h1>
+          <i class="fa-solid fa-house fa-xl" style="color: #ffffff"></i
+        ></a>
+      </div>
+      <div class="subscribe-logo">
+        <img
+          src="../image/logo.png"
+          alt="blog logo"
+          class="subscribe-logo-img" />
+      </div>
+
+      <form class="subscribe-shadow-box">
+        <div class="form-group">
+          <label for="subscribe-email"><strong>Email address</strong></label>
+          <input
+            type="email"
+            class="form-control"
+            id="subscribe-email"
+            aria-describedby="subscribe-email-help"
+            placeholder="Enter email" />
+          <small id="subscribe-email-help" class="form-text text-muted"
+            >We'll never share your email with anyone else.</small
+          >
+        </div>
+        <div class="form-group">
+          <label for="subscribe-password"><strong>Password</strong></label>
+          <input
+            type="password"
+            class="form-control"
+            id="subscribe-password"
+            placeholder="Password" />
+        </div>
+        <div class="form-group form-check">
+          <input
+            type="checkbox"
+            class="form-check-input"
+            id="subscribe-check" />
+          <label class="form-check-label" for="subscribe-check"
+            >keep me updated</label
+          >
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </main>
+  </body>
+</html>
